@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 200, 0); 
+    background-image: url(https://foni.club/uploads/posts/2023-02/1675420512_foni-club-p-fon-zadnii-simpsonov-7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#container-images {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+}
+
+#div-logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    padding-top: 20px;
+    position: relative;
+}
+
+#img-logo {
+    width: 300px;
+    animation: size 3s ease-out;
+}
+
+@keyframes size {
+    from {
+        width: 1000px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+
+#text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100%;
+    width: 450px;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 0px 3px 3px 0px rgb(42, 42, 42);
+    animation: down 2s;
+    position: absolute;
+}
+
+@keyframes down {
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+
+#img-marge {
+    height: 665px;
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    animation: go-back 3s;
+}
+
+
+#img-hommer {
+    height: 570px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    animation: go-back 3s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(300px);
+    }
+    to {
+      transform: translateX(0);
+    }
+} 
+
+
+#img-bart {
+    height: 332.5px;
+    position: absolute;
+    bottom: 0;
+    left: 62%;
+    animation: go-back 3s;
+}
+
+ 
+
+#img-lisa {
+    height: 332.5px;
+    position: absolute;
+    bottom: 0;
+    left: 28%;
+    animation: go-back 3s;
+}
+
+/* @keyframes golisa {
+    50% {
+        top: 100%;
+    }
+    75% {
+        top: 50%
+    }
+} */
+
+#img-maggie {
+    height: 225px;
+    position: absolute;
+    bottom: 0;
+    left: 46%;
+    animation: go-back 3s;
+}
+
+/* @keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+} */
+
+/* #div-rosquinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+} */
+
+#img-rosquinha {
+    position: absolute;
+    height: 300px;
+    top: 28%;
+    /* animation: rodar 8s infinite; */
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+
+/* @keyframes rodar {
+    0% {
+        transform: rotate(0);
+    }
+	100% {
+		transform: rotate(360deg);
+	}
+} */
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+p{
+    font-family: cursive;
+    font-size: 18px;
+    color: brown;
+}
+
+span {
+    color: rgb(0, 140, 255);
+    text-decoration:underline;
+}
+
+@media screen and (min-width: 1440px) {
+    #img-bart {
+        height: 300px;
+    }
+
+    #img-maggie {
+        height: 200px;
+        left: 46%;
+    }
+
+    #img-lisa {
+        height: 280px;
+        left: 30%;
+    }
+
+    #img-hommer {
+        height: 430px;
+    }
+
+    #img-marge {
+        height: 500px;
+        left: 32%;
+    }
+
+    #img-rosquinha {
+        height: 300px;
+        top: 30%;
+    }
+}
