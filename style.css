@@ -182,7 +182,7 @@ span {
     text-decoration:underline;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (max-width: 1440px) {
     #img-bart {
         height: 300px;
     }
